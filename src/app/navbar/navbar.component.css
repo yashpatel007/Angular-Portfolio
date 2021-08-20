@@ -1,0 +1,42 @@
+.navbar-expand-lg {
+  display: flex !important;
+  justify-content: space-around;
+  flex-basis: auto;
+}
+
+/*to expand navbar*/
+
+.navbar-inner {
+  /* to make the navbar transperant*/
+  background: transparent;
+}
+
+.navbar-logo {
+  height: 10%;
+  width: 10%;
+
+}
+
+.navbar-logo:hover {
+  border: 0.5px dotted var(--green);
+  letter-spacing: 2px;
+  border-radius: 40%;
+  background-color: var(--green-tint);
+}
+
+.navbar-options {
+  text-align: center;
+  margin-left: auto;
+  padding-right: 5%;
+  font-family: var(--font-mono);
+  font-size: var(--font-xs);
+}
+
+.navbar-options a {
+  color: var(--green) !important;
+}
+
+.nav-option:hover {
+  border: .5px dotted var(--green);
+  background-color: var(--green-tint);
+}

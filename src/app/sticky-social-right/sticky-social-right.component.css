@@ -1,0 +1,60 @@
+.social-tab {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -135px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+}
+
+.sticky li {
+  list-style-type: none;
+  background-color: var(--green-tint);
+  color: var(--green);
+  height: 60px;
+  padding: 5px;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.sticky li:hover {
+  margin-left: -115px;
+  background-color: var(--green-tint-dark);
+  border: 2px dotted var(--green);
+}
+
+.sticky li i {
+  float: left;
+  margin: 5px 4px !important;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.sticky li p {
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.sticky li p a {
+  text-decoration: none;
+  color: var(--lightest-slate);
+  font-size: var(--fz-md);
+}
+
+.sticky li p a:hover {
+  text-decoration: none;
+}
+
+
+.social-icon {
+  color: var(--green);
+  height: 32px;
+  width: 32px;
+}
