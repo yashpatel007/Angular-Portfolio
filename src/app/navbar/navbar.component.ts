@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(public contentProvider: ContentProviderService) { }
 
+
   ngOnInit(): void {
   }
 }
