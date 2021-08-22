@@ -19,6 +19,7 @@ phases:
   post_build:
     commands:
       - mv appspec.yml ./dist/yash-portfolio
+      - mv scripts ./dist/yash-portfolio
 artifacts:
   files:
     - "**/*"
