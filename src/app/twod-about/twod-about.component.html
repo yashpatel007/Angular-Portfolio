@@ -3,13 +3,12 @@
     
     <div class="about-main">
         <div class="heading">
-            <h2><span class="color-green">&#8420;</span> &nbsp; About</h2><hr>
+            <h2><span class="color-green">&#8420;</span> &nbsp;&nbsp; About</h2><hr>
         </div>
         <div class="content">
-            <p>{{contentProvider.about_content}}</p>
+            <p>{{contentProvider.content.about}}</p>
             <ul class="skills-list" id="skills">
-                <li *ngFor="let item of contentProvider.skills.front_end"> {{item}}</li>
-                <li *ngFor="let item of contentProvider.skills.back_end"> {{item}}</li>
+                <li *ngFor="let item of contentProvider.content.skills.primary"> {{item}}</li>
             </ul>
         </div>
         <div class="image">

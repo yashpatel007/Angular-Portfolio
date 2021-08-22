@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentProviderService } from '../services/content-provider.service';
 
 @Component({
   selector: 'app-twod-projectsgrid',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwodProjectsgridComponent implements OnInit {
 
-  constructor() { }
+  contentProvider: ContentProviderService
+  constructor(contentProvider: ContentProviderService) {
+    this.contentProvider = contentProvider;
+    console.log(contentProvider.content.projects)
+  }
 
   ngOnInit(): void {
   }

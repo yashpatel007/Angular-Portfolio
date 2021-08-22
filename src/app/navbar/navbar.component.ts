@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentProviderService } from '../services/content-provider.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,17 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public contentProvider: ContentProviderService) { }
 
   ngOnInit(): void {
   }
 }
 
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('navbar')!.style.background = '#ffffff';
-  } else {
-    document.getElementById('navbar')!.style.background = 'transperant';
-  }
-}
+

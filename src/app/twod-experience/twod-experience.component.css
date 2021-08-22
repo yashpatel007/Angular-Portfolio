@@ -84,3 +84,11 @@ li::before {
   width: 1em;
   display: inline-block;
 }
+
+
+@media screen and(max-width:800px) {
+  .experience-item-main {
+    display: block;
+  }
+
+}

@@ -1,39 +1,61 @@
 <div id="projects" class="projects-wrapper">
-    <div class="project-item">2</div>
-    <div class="project-item">2</div>
-    <div class="project-item">3</div>
-    <div class="project-item">4</div>
+    <div class="project-item"></div>
+    <div class="project-item"></div>
+    <div class="project-item"></div>
+    <div class="project-item"></div>
 
     <div class="project-item-main">
         <div class="project-heading">
-            <h2> <span class="color-green">&#8857;</span> &nbsp; Some Notable work</h2>
+            <h2> <span class="color-green">&#8857;</span> &nbsp; Some Notable Projects</h2>
         </div>
-        <div class="project-tabs">
+        <div *ngFor="let proj of contentProvider.content.projects.slice(0,3)" class="project-tabs">
             <div class="project-image">
                 <img src="../../assets/hero-home_tms-illo.svg" alt="img">
                 <div class="green-overlay"></div>
             </div> 
             <div class="project-discription">
-                <h3 class="project-name">Project 1</h3>
-                <p class="project-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem nobis ad odit soluta minima cum rerum deleniti aspernatur nihil.</p>
+                <h3 class="project-name">{{proj.name}}</h3>
+                <p class="project-about">{{proj.discription}}</p>
                 <ul class="project-languages">
-                    <li>JS</li>
-                    <li>JS</li>
-                    <li>JS</li>
-                    <li>JS</li>    
+                    <li *ngFor="let lang of proj.stack">{{lang}}</li>  
                 </ul>
                 <div class="project-links">
-                    <a href="">Link1</a>
-                    <a href="">Link1</a>
-                    <a href="">Link1</a>
+                    <a target="_blank" href="{{proj.github}}"> <i class="fa fa-github fa-2x"></i></a>
+                    <a target="_blank" *ngIf="proj.islive" href="{{proj.livelink}}"><i class="fa fa-external-link fa-2x"></i></a>  
                 </div>
             </div>
         </div>
+ 
+        <div class="project-heading-2">
+            <h2><span class="color-green"> &Theta;</span> Other Projects</h2>
+        </div>
+        <div class="project-secondary-grid">
+            <div *ngFor="let projSec of contentProvider.content.projects.slice(3)" class="project-item-secondary">
+                <div class="project-name-secondary">
+                    <div class="icon">
+                        <i class="fa fa-folder-o fa-3x color-green"></i>
+                    </div>
+                    <div class="name">
+                        <h3>{{projSec.name}}</h3>
+                    </div>
+                </div>
+                <div class="project-discription-secondary">
+                    <p>
+                        {{projSec.discription}}
+                    </p>
+                </div>
+                <div class="project-languages-secondary ">
+                    <div></div>
+                    <div  *ngIf="projSec.islive" target="_blank" class=""> <a href="{{projSec.livelink}}"><i class="fa fa-external-link fa-2x"></i></a>  </div>
+                    <div class=""><a target="_blank" href="{{projSec.github}}"><i class="fa fa-github fa-2x"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    <div class="project-item">
-        6
-    </div>
-    <div class="project-item">7</div>
-    <div class="project-item">8</div>
-    <div class="project-item">9</div>
+    <div class="project-item"></div>
+    <div class="project-item"></div>
+    <div class="project-item"></div>
+    <div class="project-item"></div>
 </div>

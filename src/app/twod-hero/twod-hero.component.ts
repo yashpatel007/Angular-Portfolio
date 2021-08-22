@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ContentProviderService } from '../services/content-provider.service';
 
 @Component({
   selector: 'app-twod-hero',
@@ -7,14 +8,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwodHeroComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  @Output() themeChange: any = new EventEmitter();
+  lightOn: boolean = false;
+  contentProvider: ContentProviderService;
+  constructor(contentProvider: ContentProviderService) {
+    this.contentProvider = contentProvider;
   }
 
+  ngOnInit(): void {
 
+  }
 
+  switchLight() {
+    this.lightOn = !this.lightOn;
+  }
+
+  changeTheme() {
+    if (this.contentProvider.theme == "light") {
+      this.themeChange.emit("dark");
+      this.contentProvider.theme = "dark";
+    } else {
+      this.themeChange.emit("light");
+      this.contentProvider.theme = "light";
+    }
+  }
 }
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function (event) {
   // array with texts to type in typewriter
   var dataText = ["Full Stack Developer.", "Designer.", "Tech Enthusiast."];

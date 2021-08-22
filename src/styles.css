@@ -3,45 +3,7 @@
 @import "~animate.css/animate.min";
 @import "~aos/dist/aos.css";
 
-.mt-5 {
-  margin-top: 5%;
-}
 
-.mt-10 {
-  margin-top: 10%;
-}
-
-.mt-15 {
-  margin-top: 15%;
-}
-
-.mt-20 {
-  margin-top: 20%;
-}
-
-.mt-25 {
-  margin-top: 25%;
-}
-
-.mt-30 {
-  margin-top: 30%;
-}
-
-.text-1 {
-  color: #e31b6d;
-}
-
-.text-2 {
-  color: #1EFFBC;
-}
-
-.text-3 {
-  color: #1F01B9;
-}
-
-.text-4 {
-  color: #B4E33D;
-}
 
 body {
   background-color: var(--navy);

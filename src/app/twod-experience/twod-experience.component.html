@@ -10,11 +10,11 @@
         <div class="experience-item-content">
             <div class="d-flex align-items-start">
                 <div class="nav flex-column nav-pills me-3" style="width:20%;height:auto;"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button *ngFor="let exp of contentProvider.experience; let i=index;" class="nav-link custom-button" [class.active]="i==0" id="v-pills-{{exp.company}}-tab" data-bs-toggle="pill" attr.data-bs-target="#v-pills-{{exp.company}}" type="button" role="tab" attr.aria-controls="v-pills-{{exp.company}}" aria-selected="true">{{exp.companyTitle}}</button>
+                    <button *ngFor="let exp of contentProvider.content.experience; let i=index;" class="nav-link custom-button" [class.active]="i==0" id="v-pills-{{exp.company}}-tab" data-bs-toggle="pill" attr.data-bs-target="#v-pills-{{exp.company}}" type="button" role="tab" attr.aria-controls="v-pills-{{exp.company}}" aria-selected="true">{{exp.companyTitle}}</button>
                 </div>
                 <div class="tab-content pl-5" style="width:70%;height:auto;" id="v-pills-tabContent">
-                    <div *ngFor="let exp of contentProvider.experience; let i=index;" class="tab-pane fade show"  [class.active]="i==0" id="v-pills-{{exp.company}}" role="tabpanel" attr.aria-labelledby="v-pills-{{exp.company}}-tab">
-                        <h4>{{exp.position}} <a target="_blank" class="company-link" href="{{exp.link}}">@{{exp.company}}</a> <span class="exp-duration"><p>{{exp.start}}-{{exp.end}}</p></span></h4>
+                    <div *ngFor="let exp of contentProvider.content.experience; let i=index;" class="tab-pane fade show"  [class.active]="i==0" id="v-pills-{{exp.company}}" role="tabpanel" attr.aria-labelledby="v-pills-{{exp.company}}-tab">
+                        <h4>{{exp.position}} <a target="_blank" class="company-link" href="{{exp.weblink}}">@{{exp.company}}</a> <span class="exp-duration"><p>{{exp.start}}-{{exp.end}}</p></span></h4>
                         <ul id="roles">
                             <li *ngFor="let role of exp.roles">{{role}}</li>
                         </ul>

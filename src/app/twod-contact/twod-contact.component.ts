@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentProviderService } from '../services/content-provider.service';
 
 @Component({
   selector: 'app-twod-contact',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwodContactComponent implements OnInit {
 
-  constructor() { }
+  contentProvider: ContentProviderService
+  constructor(contentProvider: ContentProviderService) {
+    this.contentProvider = contentProvider;
+  }
 
   ngOnInit(): void {
   }

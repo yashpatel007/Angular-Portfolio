@@ -1,0 +1,36 @@
+.contact-grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1.5fr 5fr 1.5fr;
+  grid-row-gap: 50px;
+  margin-top: 10%;
+}
+
+
+.contact-whatsnext {
+  color: var(--green);
+  font-family: var(--font-mono);
+}
+
+.contact-heading {
+  display: grid;
+  color: var(--lightest-slate);
+  justify-content: center;
+  justify-items: center;
+}
+
+.contact-content {
+  color: var(--slate);
+  padding: 10px;
+}
+
+.button-contact {
+  border: 1px solid var(--green);
+  background-color: transparent;
+  padding: 10px;
+  color: var(--green);
+}
+
+.button-contact:hover {
+  background-color: var(--green-tint);
+}

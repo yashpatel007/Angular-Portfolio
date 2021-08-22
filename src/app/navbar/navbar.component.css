@@ -6,9 +6,13 @@
 
 /*to expand navbar*/
 
-.navbar-inner {
+.nav-transparent {
   /* to make the navbar transperant*/
   background: transparent;
+}
+
+.nav-colored {
+  background: var(--light-navy);
 }
 
 .navbar-logo {
@@ -39,4 +43,19 @@
 .nav-option:hover {
   border: .5px dotted var(--green);
   background-color: var(--green-tint);
+}
+
+.nav-resume-button {
+  border: 1px solid var(--green);
+  background-color: var(--green-tint);
+}
+
+.nav-resume-button:hover {
+  background-color: var(--green-tint-dark);
+  border: 1px solid var(--green);
+}
+
+
+.navbar li {
+  padding: 10px;
 }

@@ -1,0 +1,156 @@
+{
+    "name":"Yash Patel",
+    "email": "patelyash1311@gmail.com",
+    "phone":"(607)232-0149",
+    "website":"http://patelyash.com",
+    "address":"Doylestown, PA",
+    "about":"I am a software engineer highly skilled at creating scalable web applications. My area of expertise is back-end development and deployment, I also have experties in front end development with mordern JS Frameworks as well as passion for design.",
+    "resumeLink":"https://drive.google.com/file/d/1YmTE9yNh_tvNkX4SwSK1jGYtNRNHo90n/view?usp=sharing",
+    "social":{
+        "github":"https://github.com/yashpatel007",
+        "linkedIn": "https://www.linkedin.com/in/yashpatel007",
+        "youtube":"https://www.youtube.com/channel/UCEOtoOm8KSqf3sISe3LwvCA"
+    },
+    "education":[
+        {
+            "degree": "Master of Science",
+            "major":"Computer Science",
+            "university": "Binghamton University (SUNY)",
+            "start":"Aug 2018",
+            "end":"May 2020",
+            "gpa":3.67
+        },
+        {
+            "degree": "Bachelor of Technology",
+            "major":"Electronics and Communication",
+            "university" : "Madhav Institute of Technology and Science",
+            "start":"Aug 2014",
+            "end":"May 2018",
+            "gpa":7.72
+        }
+        ],
+    "skills":{
+        "primary":["Spring","Django", "Angular", "Express","Node.js","python", "Java Swing"],
+        "languages":["C/C++", "Java","Python","R","SQL/NoSQL","JavaScript","Objective C","PHP"],
+        "tools":["AWS(Amazon Web Services)","Google Protocol Buffers(Protobufs)", "Apache Thrift"],
+        "frameworks":["Spring", "Django","Angular", "Node.js", "React"],
+        "extra":["TCP/IP","Circuit Design", "antenna design", "Microcontroller Programming", "MATLAB", "Qt"]
+    },
+    "experience":[
+        {
+            "companyTitle":"Vantage Labs LLC",
+            "company":"VantageLabs",
+            "weblink":"https://www.vantage.com",
+            "type":"Full time",
+            "position":"Java Developer",
+            "location":"New Hope, PA",
+            "start":"Jul 2020",
+            "end":"Present",
+            "roles":[
+                "Work on development, enhancements, and operation of web based software services as a full-stack web developer within a dedicated, produst based system",
+                "Participate in specification, design, implementation and support of the product, as well as improve existing features and product performance.",
+                "Integrate, design and optimize scalable API solutions for the service"
+            ],
+            "stack":["Spring", "Angular", "PostgresSQL", "AWS"]
+        },
+        {
+            "companyTitle":"Agzeit/ValueAg LLC",
+            "company":"Agzeit",
+            "weblink":"https://www.agzeit.com",
+            "type":"Internship",
+            "position":"Lead Software Developer",
+            "location":"Binghamton, NY",
+            "start":"Jun 2019",
+            "end":"Aug 2019",
+            "roles":[
+                "Designed and developed a flexible web-portal for supporting local businesses",
+                "Programmed a mobile application (similar to Pokemon Go) for engaging users for web-portal",
+                "Got a good peak at Angular, SQL, PHP, Objective C"
+            ],
+            "stack":["PHP", "Angular", "MongoDB", "AWS"]
+        }
+    ],
+    "projects":[
+        {
+            "name":"O-Shop",
+            "discription":"A fully functional web store for buying organic products. Designed to keep customer in mind. With ultra responsive webdesign with consistency",
+            "github":"https://github.com/yashpatel007/OrganicShop",
+            "livelink":"https://oshop-c24e0.web.app/",
+            "islive":true,
+            "stack":["Angular","Firebase"]
+        },
+        {
+            "name":"EZ-Settings",
+            "discription":"An application made in java swing for easy configuring of OS settings, cache clean and some other advance controls",
+            "github":"https://github.com/yashpatel007/EZ_settings",
+            "livelink":"https://drive.google.com/file/d/1R686D7wIevoXMj3Q7CHHG_gyKcD1fD60/view?usp=sharing",
+            "islive":true,
+            "stack":["Java","XML"]
+        },
+        {
+            "name":"Voice Code",
+            "discription":"A simple application to auto-type template code on any editor of choice, with voice command using the Artificial Neural network for input voice classification",
+            "github":"https://github.com/yashpatel007/voicecode",
+            "livelink":"",
+            "islive":false,
+            "stack":["python"]
+        },
+        {
+            "name":"Web To PDF",
+            "discription":"A python application to dynamically perform web scraping and downloading the webpages in pdf format iteratively visiting the next page if present up to the specified limit",
+            "github":"https://github.com/yashpatel007/Web2PDF",
+            "livelink":"",
+            "islive":false,
+            "stack":["python"]
+        },
+        {
+            "name":"Markets API",
+            "discription":"An API for scraping and returnig current market data and prices. This is a light weight api that uses web-scraping to get data and history. This is built using  Java Spring",
+            "github":"https://github.com/yashpatel007/MarketsAPI",
+            "livelink":"",
+            "islive":false,
+            "stack":["Java","Spring"]
+        },
+        {
+            "name":"Smart-pointer",
+            "discription":"A custom C++ liberary for pointers. This pointer gets destroyed when nothingis pointing at it, this solves the problem of pointer avoiding unnecessary memory leaks.",
+            "github":"https://github.com/yashpatel007/Smart-Pointer",
+            "livelink":"",
+            "islive":false,
+            "stack":["C++"]
+        },
+        {
+            "name":"C++ Map Liberary",
+            "discription":"A custom C++ liberary for maps. This implementation uses the random height skip list with improved lookup performance as the input data scales.",
+            "github":"https://github.com/yashpatel007/Smart-Pointer",
+            "livelink":"",
+            "islive":false,
+            "stack":["C++"]
+        },
+        {
+            "name":"Sudoku Solver",
+            "discription":"A fun simple app to generate and solve sudoku puzzels.",
+            "github":"https://github.com/yashpatel007/Sudoku-Solver",
+            "livelink":"",
+            "islive":false,
+            "stack":["Vannila JS"]
+        },
+        {
+            "name":"Distributed-Hash-table",
+            "discription":"A multi server hash table is made using Java and Apache Thrift as Interface Defination Language(IDL). This represents the scalable DB model similar to AWS",
+            "github":"https://github.com/yashpatel007/Chord-Distributed-Hash-table",
+            "livelink":"",
+            "islive":false,
+            "stack":["Java","Apache Thrift"]
+        },
+        {
+            "name":"CPU Pipeline Simulator",
+            "discription":"The code reads the Assembly instructions and simulated the working of a scalar CPU with a five stage pipeline, instruction squashing and multi layer Arithmetic Logic Unit(ALU).",
+            "github":"https://github.com/yashpatel007/Chord-Distributed-Hash-table",
+            "livelink":"",
+            "islive":false,
+            "stack":["Java","Apache Thrift"]
+        }
+    ],
+    "hobbies":["Musical Instruments(Flute, Violin)","Sports(Softball, Tennis, Basketball, Soccer)"]
+}
