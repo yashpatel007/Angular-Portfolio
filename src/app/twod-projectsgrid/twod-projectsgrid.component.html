@@ -10,7 +10,7 @@
         </div>
         <div *ngFor="let proj of contentProvider.content.projects.slice(0,3)" class="project-tabs">
             <div class="project-image">
-                <img src="../../assets/hero-home_tms-illo.svg" alt="img">
+                <img src="{{proj.imageUrl}}" style="width: 100%;" alt="img">
                 <div class="green-overlay"></div>
             </div> 
             <div class="project-discription">

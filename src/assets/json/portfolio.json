@@ -77,7 +77,8 @@
             "github":"https://github.com/yashpatel007/OrganicShop",
             "livelink":"https://oshop-c24e0.web.app/",
             "islive":true,
-            "stack":["Angular","Firebase"]
+            "stack":["Angular","Firebase"],
+            "imageUrl":"../../assets/oshop.png"
         },
         {
             "name":"EZ-Settings",
@@ -85,7 +86,8 @@
             "github":"https://github.com/yashpatel007/EZ_settings",
             "livelink":"https://drive.google.com/file/d/1R686D7wIevoXMj3Q7CHHG_gyKcD1fD60/view?usp=sharing",
             "islive":true,
-            "stack":["Java","XML"]
+            "stack":["Java","XML"],
+            "imageUrl":"../../assets/ezsettings.png"
         },
         {
             "name":"Voice Code",
@@ -93,7 +95,8 @@
             "github":"https://github.com/yashpatel007/voicecode",
             "livelink":"",
             "islive":false,
-            "stack":["python"]
+            "stack":["python"],
+            "imageUrl":"../../assets/voicecode.png"
         },
         {
             "name":"Web To PDF",
