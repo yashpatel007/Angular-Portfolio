@@ -16,14 +16,15 @@ body[data-theme="dark"] {
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
+  --green-alt: #96ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
 }
 
 body[data-theme="light"] {
-  background-color: var(--white);
+  background-color: #ffffff;
   --dark-navy: #020c1b;
   --navy: #0a192f;
-  --light-navy: #112240;
+  --light-navy: #e6f1ff;
   --lightest-navy: #233554;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --dark-slate: #000000;
@@ -33,7 +34,24 @@ body[data-theme="light"] {
   --white: #e6f1ff;
   --green: #ff9f1c;
   --green-tint: rgba(255, 159, 28, 0.1);
+  --green-alt: #ffc818;
   --green-tint-dark: rgba(255, 159, 28, 0.6);
+}
+
+body[data-theme="cream"] {
+  background-color: #fdecef;
+  --green: #9d6381;
+  --green-tint: rgba(157, 99, 129, 0.1);
+  --green-alt: #a77896;
+  --green-tint-dark: rgba(57, 99, 129, 0.6);
+  --dark-slate: #000000;
+  --slate: #000000;
+  --light-slate: #000000;
+  --lightest-slate: #000000;
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #966482;
+  --lightest-navy: #233554;
 }
 
 
@@ -51,6 +69,7 @@ body[data-theme="light"] {
   --white: #e6f1ff;
   --green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
+  --green-tint-dark: rgba(100, 255, 218, 0.6);
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   --fz-xxs: 12px;

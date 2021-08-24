@@ -13,6 +13,7 @@ import { ContentProviderService } from './services/content-provider.service';
 import { TwodExperienceComponent } from './twod-experience/twod-experience.component';
 import { TwodContactComponent } from './twod-contact/twod-contact.component';
 import { StickySocialRightComponent } from './sticky-social-right/sticky-social-right.component';
+import { ThreedHeroComponent } from './threed-hero/threed-hero.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { StickySocialRightComponent } from './sticky-social-right/sticky-social-
     TwodExperienceComponent,
     TwodContactComponent,
     StickySocialRightComponent,
+    ThreedHeroComponent
   ],
   imports: [
     BrowserModule,

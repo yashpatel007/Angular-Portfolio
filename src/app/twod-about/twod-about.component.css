@@ -38,7 +38,7 @@
 
 .content {
   grid-area: content;
-  overflow: scroll;
+  overflow: hidden;
   text-align: left;
   align-items: flex-start;
   padding-right: 10%;

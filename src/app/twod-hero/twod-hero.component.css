@@ -154,7 +154,7 @@
   content: "";
   height: 200px;
   width: 5px;
-  background-color: #96ffda;
+  background-color: var(--green-alt);
   margin-left: 5px;
   top: 10;
   position: absolute;
@@ -162,7 +162,7 @@
 
 .lamp-cover {
   position: absolute;
-  background-color: #96ffda;
+  background-color: var(--green-alt);
   border-radius: 150px 150px 0 0;
   height: 100px;
   width: 130px;

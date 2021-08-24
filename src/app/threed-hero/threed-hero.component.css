@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  color: var(--slate);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
