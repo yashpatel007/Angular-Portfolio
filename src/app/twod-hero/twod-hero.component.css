@@ -190,3 +190,14 @@
   margin-top: 25%;
   background-color: transparent;
 }
+
+.switch-3d-button {
+  position: absolute;
+  z-index: 10;
+  border: none;
+  color: var(--green);
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 50%;
+  background-color: transparent;
+}

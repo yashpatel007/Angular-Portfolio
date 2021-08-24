@@ -6,7 +6,8 @@
         </div>
         <div class="light-container" style="cursor: hand;">
             <div *ngIf="lightOn" id="light" [class]="lightOn?'light':'' ">
-                <button (click)="changeTheme()" class="switch-theme-button"> <i class="fa fa-cog fa-2x"></i> </button> 
+                <button (click)="changeTheme()" class="switch-theme-button"> <i class="fa fa-sun-o fa-2x"></i> </button> 
+                <button (click)="toggel3D()" class="switch-3d-button"> <i class="fa fa-cube fa-2x"></i> </button> 
             </div>
                
         </div>

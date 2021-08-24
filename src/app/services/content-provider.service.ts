@@ -6,11 +6,8 @@ import * as data from '../../assets/json/portfolio.json';
   providedIn: 'root'
 })
 export class ContentProviderService {
-
-
-
   content: any = data;
-  theme: String = "dark"
-
+  theme: String = "dark";
+  is3D: boolean = false;
   constructor() { }
 }

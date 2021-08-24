@@ -14,15 +14,14 @@ import { ContentProviderService } from './services/content-provider.service';
 })
 export class AppComponent implements OnInit {
 
-
-
   contentProvider: ContentProviderService;
-  @Input() theme: String
-
+  theme: String;
+  is3D: boolean;
 
   constructor(contentProvider: ContentProviderService) {
     this.contentProvider = contentProvider;
     this.theme = contentProvider.theme;
+    this.is3D = contentProvider.is3D;
   }
 
   ngOnInit(): void {
@@ -32,6 +31,14 @@ export class AppComponent implements OnInit {
 
   getTheme() {
     return this.contentProvider.theme;
+  }
+
+  updateTheme(event: any) {
+    this.theme = event;
+  }
+
+  swithTo3D(event: any) {
+    this.is3D = event;
   }
 
 }

@@ -10,15 +10,15 @@ export class TwodHeroComponent implements OnInit {
 
 
   @Output() themeChange: any = new EventEmitter();
+  @Output() switch3D: any = new EventEmitter();
+
   lightOn: boolean = false;
   contentProvider: ContentProviderService;
+
   constructor(contentProvider: ContentProviderService) {
     this.contentProvider = contentProvider;
   }
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void { }
 
   switchLight() {
     this.lightOn = !this.lightOn;
@@ -31,6 +31,16 @@ export class TwodHeroComponent implements OnInit {
     } else {
       this.themeChange.emit("light");
       this.contentProvider.theme = "light";
+    }
+  }
+
+  toggel3D() {
+    if (this.contentProvider.is3D) {
+      this.contentProvider.is3D = false;
+      this.switch3D.emit(false);
+    } else {
+      this.contentProvider.is3D = true;
+      this.switch3D.emit(true);
     }
   }
 }
