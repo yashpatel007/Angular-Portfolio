@@ -1,8 +1,5 @@
 <div id="projects" class="projects-wrapper">
     <div class="project-item"></div>
-    <div class="project-item"></div>
-    <div class="project-item"></div>
-    <div class="project-item"></div>
 
     <div class="project-item-main">
         <div class="project-heading">
@@ -10,7 +7,7 @@
         </div>
         <div *ngFor="let proj of contentProvider.content.projects.slice(0,3)" class="project-tabs">
             <div class="project-image">
-                <img src="{{proj.imageUrl}}" style="width: 100%;" alt="img">
+                <img src="{{proj.imageUrl}}" style="width: auto;" alt="img">
                 <div class="green-overlay"></div>
             </div> 
             <div class="project-discription">
@@ -54,8 +51,5 @@
 
 
     </div>
-    <div class="project-item"></div>
-    <div class="project-item"></div>
-    <div class="project-item"></div>
     <div class="project-item"></div>
 </div>

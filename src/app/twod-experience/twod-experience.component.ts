@@ -14,6 +14,16 @@ export class TwodExperienceComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
+
+  isMobile() {
+    if (window.innerWidth < 1000) {
+      return true;
+    }
+    return false;
+  }
+
+
 
 }

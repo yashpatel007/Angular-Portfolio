@@ -16,4 +16,11 @@ export class StickySocialRightComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openSocial(url: string): void {
+    if (url.includes('@gmail.com')) {
+      url = 'mailto:' + url;
+    }
+    window.open(url, '_blank');
+  }
+
 }

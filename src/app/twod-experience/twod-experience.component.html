@@ -1,15 +1,13 @@
-<div id="work">
-<div class="experience-wrapper">
-    <div class="experience-item">
 
-    </div>
+<div id="work" class="experience-wrapper">
+    <div class="experience-item"></div>
     <div class="experience-item-main">
         <div class="experience-item-heading">
             <h2><span class="color-green">&#8414;</span> &nbsp; Where I have worked</h2><hr>
         </div>
         <div class="experience-item-content">
-            <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" style="width:20%;height:auto;"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div *ngIf="!isMobile()" class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button *ngFor="let exp of contentProvider.content.experience; let i=index;" class="nav-link custom-button" [class.active]="i==0" id="v-pills-{{exp.company}}-tab" data-bs-toggle="pill" attr.data-bs-target="#v-pills-{{exp.company}}" type="button" role="tab" attr.aria-controls="v-pills-{{exp.company}}" aria-selected="true">{{exp.companyTitle}}</button>
                 </div>
                 <div class="tab-content pl-5" style="width:70%;height:auto;" id="v-pills-tabContent">
@@ -21,10 +19,25 @@
                     </div>
                 </div>
             </div>
+            <div *ngIf="isMobile()">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li *ngFor="let exp of contentProvider.content.experience; let i=index;" class="nav-item" role="presentation">
+                        <button class="nav-link custom-button" [class.active]="i==0" id="pills-{{exp.company}}-tab" data-bs-toggle="pill" attr.data-bs-target="#pills-{{exp.company}}" type="button" role="tab" attr.aria-controls="pills-{{exp.company}}" aria-selected="true">{{exp.company}}</button>
+                    </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div *ngFor="let exp of contentProvider.content.experience; let i=index;" class="tab-pane fade show"  [class.active]="i==0" id="pills-{{exp.company}}" role="tabpanel" attr.aria-labelledby="pills-{{exp.company}}-tab">
+                            <h4>{{exp.position}} <a target="_blank" class="company-link" href="{{exp.weblink}}">@{{exp.company}}</a> <span class="exp-duration"><p>{{exp.start}}-{{exp.end}}</p></span></h4>
+                            <ul id="roles">
+                                <li *ngFor="let role of exp.roles">{{role}}</li>
+                            </ul>
+                        </div>
+                    </div>  
+            </div>
         </div>
     </div>
     <div class="experience-item"></div>
 </div>
-</div>
+
 
 

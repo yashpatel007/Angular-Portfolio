@@ -1,18 +1,18 @@
 <div class="social-tab">
     <ul class="sticky">
-        <li>
+        <li (click)="openSocial(contentProvider.content.social.github)">
             <i class="fa fa-github fa-2x social-icon " aria-hidden="true"></i>
             <p><a href="{{contentProvider.content.social.github}}" target="_blank">Github</a></p>
         </li>
-        <li>
+        <li (click)="openSocial(contentProvider.content.social.linkedIn)">
             <i class="fa fa-linkedin-square fa-2x social-icon" aria-hidden="true"></i>
             <p><a href="{{contentProvider.content.social.linkedIn}}" target="_blank">LinkedIn</a></p>
         </li>
-        <li>
+        <li (click)="openSocial(contentProvider.content.social.youtube)">
             <i class="fa fa-youtube-play fa-2x social-icon" aria-hidden="true"></i>
             <p><a href="{{contentProvider.content.social.youtube}}" target="_blank">YouYube</a></p>
         </li>
-        <li>
+        <li (click)="openSocial(contentProvider.content.email)">
             <i class="fa fa-envelope-o fa-2x social-icon" aria-hidden="true"></i>
             <p><a href="mailto:{{contentProvider.content.email}}" target="_blank">Email</a></p>
         </li>

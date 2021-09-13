@@ -43,7 +43,6 @@ export class ThreedSetupServiceService {
 
     this.gltfLoader = new GLTFLoader();
 
-
   }
 
 

@@ -1,10 +1,6 @@
 .projects-wrapper {
   display: grid;
-  grid-template-rows: auto auto;
   grid-template-columns: 1.5fr 5fr 1fr;
-  grid-template-rows: 1fr auto 1fr;
-  margin-left: 1fr;
-  margin-right: 1fr;
 }
 
 .project-item-main {
@@ -204,7 +200,7 @@ img {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .project-image {
     width: 100%;
   }
