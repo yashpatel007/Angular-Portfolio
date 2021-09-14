@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ContentProviderService } from '../services/content-provider.service';
 
 @Component({
@@ -13,6 +13,23 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  setBackgroundColor(state: number) {
+    var myNav: HTMLElement = document.getElementById('mynav')!
+    if (state == 1) {
+      myNav!.classList.add("nav-colored");
+      myNav!.classList.remove("nav-transparent");
+    }
+    else {
+      myNav!.classList.add("nav-transparent");
+      myNav!.classList.remove("nav-colored");
+    }
+  }
+
+
+
 }
+
+
 
 

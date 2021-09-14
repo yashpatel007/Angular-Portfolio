@@ -1,9 +1,9 @@
-import { EventEmitter, Input } from '@angular/core';
+import { AfterViewInit, EventEmitter, HostListener, Input, ViewChild } from '@angular/core';
 import { Component, OnInit, Output } from '@angular/core';
 import * as  AOS from 'aos';
 
 import { ContentProviderService } from './services/content-provider.service';
-
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -12,16 +12,21 @@ import { ContentProviderService } from './services/content-provider.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
 
   contentProvider: ContentProviderService;
   theme: String;
   is3D: boolean;
 
+
   constructor(contentProvider: ContentProviderService) {
     this.contentProvider = contentProvider;
     this.theme = contentProvider.theme;
     this.is3D = contentProvider.is3D;
+  }
+  @ViewChild(NavbarComponent) nav!: NavbarComponent;
+  ngAfterViewInit(): void {
+    throw new Error('Method not implemented.');
   }
 
   ngOnInit(): void {
@@ -41,10 +46,23 @@ export class AppComponent implements OnInit {
     this.is3D = event;
   }
 
+  changeColor() {
+    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+      this.nav.setBackgroundColor(1);
+    }
+    else {
+      this.nav.setBackgroundColor(0);
+    }
+  }
+
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
+    this.changeColor();
+  }
+
 }
 
 
-// var myNav: HTMLElement = document.getElementById('mynav')!;
+
 // window.onscroll = function () {
 //   "use strict";
 //   if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
