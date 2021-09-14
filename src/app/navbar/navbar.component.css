@@ -5,22 +5,18 @@
 }
 
 /*to expand navbar*/
-
 .nav-transparent {
   /* to make the navbar transperant*/
   background: transparent;
 }
-
-
 
 .nav-colored {
   background: var(--light-navy);
 }
 
 .navbar-logo {
-  height: 10%;
-  width: 10%;
-
+  height: 70px;
+  width: 70px;
 }
 
 .navbar-logo:hover {
@@ -49,14 +45,12 @@
 
 .nav-resume-button {
   border: 1px solid var(--green);
-  background-color: var(--green-tint);
 }
 
 .nav-resume-button:hover {
-  background-color: var(--green-tint-dark);
+  background-color: var(--green-tint);
   border: 1px solid var(--green);
 }
-
 
 .navbar li {
   padding: 10px;

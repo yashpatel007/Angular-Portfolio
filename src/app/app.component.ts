@@ -38,26 +38,39 @@ export class AppComponent implements OnInit, AfterViewInit {
     return this.contentProvider.theme;
   }
 
+  /* get the event from twod hero*/
   updateTheme(event: any) {
     this.theme = event;
   }
+  changeTheme() {
+    if (this.contentProvider.theme == "light") {
+      this.theme = "dark";
+      this.contentProvider.theme = "dark";
+    } else {
+      this.theme = "light";
+      this.contentProvider.theme = "light";
+    }
+  }
+
 
   swithTo3D(event: any) {
     this.is3D = event;
   }
 
+  /* set background as opaque: if the window is scrolled*/
   changeColor() {
-    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
       this.nav.setBackgroundColor(1);
     }
     else {
       this.nav.setBackgroundColor(0);
     }
   }
-
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
     this.changeColor();
   }
+
+
 
 }
 
