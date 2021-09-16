@@ -1,10 +1,8 @@
 import { AfterViewInit, EventEmitter, HostListener, Input, ViewChild } from '@angular/core';
 import { Component, OnInit, Output } from '@angular/core';
 import * as  AOS from 'aos';
-
 import { ContentProviderService } from './services/content-provider.service';
 import { NavbarComponent } from './navbar/navbar.component';
-
 
 
 @Component({
@@ -17,6 +15,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   contentProvider: ContentProviderService;
   theme: String;
   is3D: boolean;
+
+  show: any = {
+    hoverButton: window.innerWidth < 1400 ? true : false,
+  }
 
 
   constructor(contentProvider: ContentProviderService) {
@@ -69,12 +71,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
     this.changeColor();
   }
-
-
-
 }
-
-
 
 // window.onscroll = function () {
 //   "use strict";

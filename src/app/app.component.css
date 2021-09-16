@@ -95,8 +95,7 @@ body[data-theme="cream"] {
 }
 
 
-
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1400px) {
   .hbutton {
     background-color: var(--green-tint);
     color: var(--light-slate);

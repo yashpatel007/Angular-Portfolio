@@ -17,7 +17,7 @@
         <app-twod-projectsgrid></app-twod-projectsgrid>
         <app-twod-contact></app-twod-contact>
         <app-twod-footer></app-twod-footer>
-        <div id="hoverbutton">
+        <div *ngIf="show.hoverButton" id="hoverbutton">
             <button (click)="changeTheme()" class="hbutton">
                 <i *ngIf="contentProvider.theme == 'dark'" class="fa fa-sun-o fa-2x" aria-hidden="true"></i>
                 <i *ngIf="contentProvider.theme == 'light'" class="fa fa-moon-o fa-2x" aria-hidden="true"></i>
