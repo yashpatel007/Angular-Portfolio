@@ -55,3 +55,11 @@
 .navbar li {
   padding: 10px;
 }
+
+
+@media only screen and (max-width: 950px) {
+  .nav-transparent {
+    /* to make the navbar transperant*/
+    background: var(--light-navy);
+  }
+}
