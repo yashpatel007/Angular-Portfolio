@@ -4,8 +4,7 @@ phases:
   install:
     commands:
       - echo installing nodejs...
-      - curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
-      - sudo yum install -y nodejs  #aws code build use ubuntu environement
+      - echo done installing...
   pre_build:
     commands:
       - echo installing dependencies...
