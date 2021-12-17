@@ -4,7 +4,7 @@
     "phone":"(607)232-0149",
     "website":"http://patelyash.com",
     "address":"Doylestown, PA",
-    "about":"I am a software engineer highly skilled at creating scalable solutions. Offering indepth knowledge of Spring Framework and Advanced web-design. Background writing code and developing systems for web-based SAAS applications.",
+    "about":"I am a self-motivated software developer with advance knowledge in system design, Full-stack development, Microservives, and integration of web-based SAAS applications. Experienced in building scalable web solutions along with in-depth knowledge of CI/CD processes. Interested in distributed systems, machine learning, and big data systems.",
     "resumeLink":"https://drive.google.com/file/d/181ZqTV1i7VYWymwGnW7fZZR1u21Jt_EO/view?usp=sharing",
     "social":{
         "github":"https://github.com/yashpatel007",
@@ -30,7 +30,7 @@
         }
         ],
     "skills":{
-        "primary":["Spring","Django", "Angular", "Express","Node.js","python", "Java Swing"],
+        "primary":["Spring Boot", "Angular", "Docker", "PostgreSQL", "Django", "Express", "Node.js", "Python", "Java Swing"],
         "languages":["C/C++", "Java","Python","R","SQL/NoSQL","JavaScript","Objective C","PHP"],
         "tools":["AWS(Amazon Web Services)","Google Protocol Buffers(Protobufs)", "Apache Thrift"],
         "frameworks":["Spring", "Django","Angular", "Node.js", "React"],
@@ -47,11 +47,12 @@
             "start":"Jul 2020",
             "end":"Present",
             "roles":[
-                "Work on development, enhancements, and operation of web based software services as a full-stack web developer within a dedicated, produst based system",
-                "Participate in specification, design, implementation and support of the product, as well as improve existing features and product performance.",
-                "Integrate, design and optimize scalable API solutions for the service"
+                "Developed robust microservices for secured and seamless integration with internal as well as third-party APIs such as Stripe, Google Analytics, Microsoft Ads.",
+                "Restructured application security to use unified logic for better code maintainability and improved performance.",
+                "Collaborate with project managers to select ambitiously, but realistic coding milestones on pre-release software project development.",
+                "Revise, modularize, and update old code bases to modern development standards, reducing operating costs and improving functionality."
             ],
-            "stack":["Spring", "Angular", "PostgresSQL", "AWS"]
+            "stack":["Spring", "Angular", "PostgresSQL", "AWS", "Docker"]
         },
         {
             "companyTitle":"Agzeit/ValueAg LLC",
@@ -63,9 +64,10 @@
             "start":"Jun 2019",
             "end":"Aug 2019",
             "roles":[
-                "Designed and developed a flexible web-portal for supporting local businesses",
-                "Programmed a mobile application (similar to Pokemon Go) for engaging users for web-portal",
-                "Got a good peak at Angular, SQL, PHP, Objective C"
+                "Led as a full-stack developer, designing and developing an end-to-end web portal.",
+                "Design and populat proposed databases with modern scraping techniques and API's",
+                "Developed a mobile application (similar to Pokémon go) for the web portal user base increasing consumer-to-business interaction.",
+                "Languages and frameworks used, Angular 4.0, Bootstrap, Objective C, MYSQL Database, and PHP."
             ],
             "stack":["PHP", "Angular", "MongoDB", "AWS"]
         }
