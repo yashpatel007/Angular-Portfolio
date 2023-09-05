@@ -1,7 +1,11 @@
 #step 1: Build App
-FROM node:latest as build
+FROM node:16.13.0 as build
 
-# step 2: set working directory
+RUN npm install npm@8.1.0npm 
+RUN rm -rf /usr/local/lib/node_modules/npm
+RUN mv node_modules/npm /usr/local/lib/node_modules/npm
+
+# step 2: set working directorycls
 WORKDIR /usr/local/app
 
 #step 3: add source code to app
@@ -16,10 +20,6 @@ RUN npm run build
 #serve with nginx server
 FROM nginx:latest
 
-COPY --from=build /usr/local/app/dist/portfolio /usr/share/nginx/html
+COPY --from=build /usr/local/app/dist/yash-portfolio /usr/share/nginx/html
 
 EXPOSE 80
-
-
-
-
